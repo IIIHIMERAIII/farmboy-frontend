@@ -1,5 +1,5 @@
 import { NavBar } from '../navBar/navBar';
-import { CategoryBar } from '../categoryBar/categoryBar';
+import { InfoBar } from '../infoBar/infoBar';
 import { HeaderBox } from './styled';
 import headerBg from '../../images/headerBg.png'
 
@@ -11,7 +11,7 @@ export const Header = () => {
         style={{ backgroundImage: `url(${headerBg})` }}
         >
             <NavBar />
-            <CategoryBar/>
+            <InfoBar/>
         </HeaderBox>
     );
 };

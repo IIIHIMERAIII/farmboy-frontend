@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
-import {requestProducts} from '../../api/products'
+import { requestProducts } from '../../api/products'
+import { ProductList } from "./styled";
+import { ProductItem } from "../productItem/productItem";
 
-const Products = () => {
+
+export const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -9,21 +12,18 @@ const Products = () => {
             try {
                 const results = await requestProducts();
                 setProducts(results);
-            } 
-            catch({response}) {
+            }
+            catch ({ response }) {
                 console.log(response.data.message);
             }
         }
         fetchProducts()
     }, []);
 
-    const elements = products.map(({ _id, title, price, descr, inStock }) => <li key={_id}>{title}</li>)
-    
-return (
-    <ul>
-        {elements}
-        </ul>
+    return (
+        <ProductList>
+            <ProductItem
+            data={products}/>
+        </ProductList>
     )
 };
-
-export default Products;
