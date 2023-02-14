@@ -1,4 +1,4 @@
-import { ProductCard } from "./styled";
+import { ProductCard, ProductTitle, ImgFake } from "./styled";
 
 export const ProductItem = ({ data }) => {
     
@@ -6,10 +6,10 @@ export const ProductItem = ({ data }) => {
         <>
             {data.map(product => (
                 <ProductCard key={product._id}>
-                    <span>{product.title}</span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <ProductTitle>{product.title}</ProductTitle>
+                    <span>{product.price}</span>
+                    <span>{product.descr}</span>
+                    <ImgFake/>
             </ProductCard>
         ))}
         </>

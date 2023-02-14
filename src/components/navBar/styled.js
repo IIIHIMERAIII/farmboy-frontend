@@ -17,11 +17,18 @@ padding: 10px;
 display: flex;
 align-items: center;
 cursor:pointer;
+fill:white;
+transition: all 0.3s ease-in-out;
+:hover {
+    border-color:green;
+    fill: green;
+    transform: scale(1.1);
+}
 `;
 
 export const Svg = styled.svg`
 width: 60px;
 height: 60px;
-fill: white;
+fill: iherit;
 `;
 

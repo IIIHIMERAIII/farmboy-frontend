@@ -7,7 +7,7 @@ export const InfoBar= () => {
         <CategoryBox>
             <TitleBox>
             <Img src={milk} />
-                <Title>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis facere voluptates harum.</Title>
+                <Title>Lorem ipsum dolor sit</Title>
             </TitleBox>
             <SubTitle>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptas modi, soluta distinctio corporis ad ab quos sequi. Ea hic voluptatem ullam, pariatur necessitatibus velit ducimus voluptatum, accusamus rem, eum exercitationem atque? Fugit numquam illo impedit eveniet, perspiciatis harum nobis!</SubTitle>
         </CategoryBox>
