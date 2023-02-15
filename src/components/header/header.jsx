@@ -2,7 +2,7 @@ import { NavBar } from '../navBar/navBar';
 import { InfoBar } from '../infoBar/infoBar';
 import { HeaderBox } from './styled';
 import { Container } from '../containers';
-import headerBg from '../../images/headerBg.png'
+import headerBg from '../../images/headerBg.jpg'
 
 
 

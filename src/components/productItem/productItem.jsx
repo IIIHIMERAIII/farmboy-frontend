@@ -1,4 +1,4 @@
-import { ProductCard, ProductTitle, ImgFake } from "./styled";
+import { ProductCard, ProductTitle, InfoBox,ProductDescr, PriceBox, ProductPrice, AddBtn, ImgFake } from "./styled";
 
 export const ProductItem = ({ data }) => {
     
@@ -7,9 +7,14 @@ export const ProductItem = ({ data }) => {
             {data.map(product => (
                 <ProductCard key={product._id}>
                     <ProductTitle>{product.title}</ProductTitle>
-                    <span>{product.price}</span>
-                    <span>{product.descr}</span>
-                    <ImgFake/>
+                    <InfoBox>
+                        <ImgFake />
+                        <ProductDescr>{product.descr}</ProductDescr>
+                    </InfoBox>
+                    <PriceBox>
+                        <ProductPrice>{product.price}</ProductPrice>
+                        <AddBtn>Додати до кошику</AddBtn>
+                    </PriceBox>
             </ProductCard>
         ))}
         </>

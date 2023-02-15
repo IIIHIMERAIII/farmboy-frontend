@@ -10,7 +10,7 @@ body {
 .primary-bg {
     background-image: url('./images/primaryBg.jpg');
     padding-top: 40px;
-
+    padding-bottom: 40px;
 }
 
 code {
@@ -29,4 +29,5 @@ p{
 
 ul {
   list-style: none;
+  
 }

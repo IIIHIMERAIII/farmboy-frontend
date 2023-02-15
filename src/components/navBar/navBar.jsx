@@ -10,7 +10,7 @@ export const NavBar = () => {
         <Location/>    
         <Bag>
             <Svg>
-                <use href={`${sprite}#basket`}></use>
+                <use href={`${sprite}#basket`}/>
             </Svg>
         </Bag>
     </NavBox>

@@ -18,6 +18,7 @@ display: flex;
 align-items: center;
 cursor:pointer;
 fill:white;
+outline: none;
 transition: all 0.3s ease-in-out;
 :hover {
     border-color:green;
