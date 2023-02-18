@@ -5,12 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.primary-bg {
-    background-image: url('./images/primaryBg.jpg');
-    padding-top: 40px;
-    padding-bottom: 40px;
+  background-image: url('./images/primaryBg.jpg');
+  background-size: cover;
+  padding: 15px;
+  height: 100vh;
 }
 
 code {
@@ -29,5 +27,5 @@ p{
 
 ul {
   list-style: none;
-  
+
 }

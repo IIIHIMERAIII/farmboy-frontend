@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 export const FooterBox = styled.div`
 display: flex;
@@ -10,6 +11,7 @@ border-top: 2px solid black;
 border-bottom-left-radius: 16px;
 border-bottom-right-radius: 16px;
 padding: 15px 15px 60px 15px;
+margin-bottom: 40px;
 `;
 
 export const ContactBox = styled.div`
@@ -28,9 +30,15 @@ gap: 20px;
 padding: 20px;
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
 color:white;
 font-size:18px;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+:hover, focus {
+    color:green;
+    transform: scale(1.1);
+}
 `;
 
 export const ContactWrapper = styled.section`
@@ -60,15 +68,22 @@ border-radius: 6px;
 `;
 
 export const SocialLink = styled.a`
-color:white;
 border: 1px solid white;
 border-radius: 50%;
 padding: 10px;
-display: flex
+display: flex;
+fill:white;
+cursor: pointer;
+transition: all 0.3s ease-in-out;
+:hover, focus {
+    fill:green;
+    border: 1px solid green;
+    transform: scale(1.1);
+}
 `;
 
 export const Svg = styled.svg`
-fill:white;
 width:25px;
 height:25px;
+fill:inherit;
 `;

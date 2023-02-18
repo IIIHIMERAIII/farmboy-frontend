@@ -7,5 +7,6 @@ export const HeaderBox = styled.header`
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   border-bottom: 2px solid black;
+  margin-top: 40px;
 `;
 

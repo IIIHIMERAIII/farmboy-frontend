@@ -27,10 +27,16 @@ export const Footer = () => {
                         <ContactText>HuseynFarm@gmail.com</ContactText>
                     </ContactBox>
                     <NavBox>
-                        <NavLink>Головна</NavLink>
+                        <NavLink
+                        to='/'
+                        >Головна</NavLink>
                         <NavLink>Контакти</NavLink>
-                        <NavLink>Про нас</NavLink>
-                        <NavLink>Замовлення</NavLink>
+                        <NavLink
+                        to='/about'
+                        >Про нас</NavLink>
+                        <NavLink
+                        to='/baket'
+                        >Замовлення</NavLink>
                     </NavBox>
                     <SocialBox>
                         <SocialLink>

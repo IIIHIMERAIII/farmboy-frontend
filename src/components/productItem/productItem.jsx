@@ -1,7 +1,24 @@
-import { ProductCard, ProductTitle, InfoBox,ProductDescr, PriceBox, ProductPrice, AddBtn, ImgFake } from "./styled";
+import { useDispatch } from "react-redux";
+import {addProduct} from "../../redux/baketSlice";
+import {
+    ProductCard,
+    ProductTitle,
+    InfoBox,
+    ProductDescr,
+    PriceBox,
+    ProductPrice,
+    AddBtn,
+    ImgFake
+} from "./styled";
 
 export const ProductItem = ({ data }) => {
-    
+    const dispatch = useDispatch();
+
+    const onAddProduct = (id) => {
+        const results = data.find(item => item._id === id)
+            dispatch(addProduct(results))
+        };
+
     return (
         <>
             {data.map(product => (
@@ -13,7 +30,9 @@ export const ProductItem = ({ data }) => {
                     </InfoBox>
                     <PriceBox>
                         <ProductPrice>{product.price}</ProductPrice>
-                        <AddBtn>Додати до кошику</AddBtn>
+                        <AddBtn
+                            onClick={()=>onAddProduct(product._id)}
+                        >Додати до кошику</AddBtn>
                     </PriceBox>
             </ProductCard>
         ))}

@@ -20,7 +20,7 @@ cursor:pointer;
 fill:white;
 outline: none;
 transition: all 0.3s ease-in-out;
-:hover {
+:hover, focus {
     border-color:green;
     fill: green;
     transform: scale(1.1);
