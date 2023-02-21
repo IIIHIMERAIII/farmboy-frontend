@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 
 
-export const BaketProduct = styled.li`
+export const CartProduct = styled.li`
 padding: 15px 10px 15px 10px;
 justify-content: space-between;
 align-items: center;
 display: flex;
 box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.75);
-border-radius: 16px
+background-color: white;
+border-radius: 12px;
 `;
 
 export const ProductTitle = styled.span`

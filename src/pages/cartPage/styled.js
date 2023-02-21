@@ -7,4 +7,6 @@ padding-bottom: 25px;
 padding-left:15px;
 padding-right:15px;
 background-color: white;
+background-size: cover;
+justify-content: space-between;
 `;

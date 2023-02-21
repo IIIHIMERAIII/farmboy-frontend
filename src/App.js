@@ -2,7 +2,7 @@ import { Route, Routes} from "react-router-dom";
 import { LayoutHeader } from "./components/layoutHeader";
 import { LayoutFooter } from "./components/layoutFooter";
 import { HomePage } from './pages/homePage/homePage'
-import { BaketPage } from "./pages/baketPage/baketPage";
+import { CartPage } from "./pages/cartPage/cartPage";
 import {AboutPage} from './pages/abouPage/aboutPage'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <LayoutHeader/>
         <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path='/baket' element={<BaketPage/>}/>
+        <Route path='/cart' element={<CartPage/>}/>
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     <LayoutFooter/>

@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import {addProduct} from "../../redux/baketSlice";
+import {addProduct} from "../../redux/cartSlice";
 import {
     ProductCard,
     ProductTitle,

@@ -35,7 +35,7 @@ export const Footer = () => {
                         to='/about'
                         >Про нас</NavLink>
                         <NavLink
-                        to='/baket'
+                        to='/cart'
                         >Замовлення</NavLink>
                     </NavBox>
                     <SocialBox>

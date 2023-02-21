@@ -1,11 +1,11 @@
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 import {
     dellProduct,
     decreaseProductQuantity,
     increaseCartQuantity
-} from "../../redux/baketSlice";
+} from "../../redux/cartSlice";
 import {
-    BaketProduct,
+    CartProduct,
     ProductTitle,
     FunctionBox,
     DellBtn,
@@ -17,12 +17,14 @@ import {
 } from "./styled";
 import sprite from '../../images/sprite.svg'
 
-export const BaketItem = ({ product }) => {
+export const CartItem = ({ product }) => {
     const dispatch = useDispatch();
-    
+    const ProductSum = (product.price * product.qty).toFixed(2);
+
+
     return (
     <>
-        <BaketProduct>
+        <CartProduct>
             <ProductTitle>{product.title}</ProductTitle>
                 <span>{product.price}</span>
             <FunctionBox>
@@ -46,7 +48,7 @@ export const BaketItem = ({ product }) => {
                     </QuantitySvg>
                 </QuantityBtn>
                 <SumTitle
-                >{(product.price * product.qty).toFixed(2)}</SumTitle>
+                >{ProductSum}</SumTitle>
                 <DellBtn
                     onClick={() => {
                                 dispatch(dellProduct(product.id));
@@ -57,7 +59,7 @@ export const BaketItem = ({ product }) => {
                     </DellSvg>
                 </DellBtn> 
             </FunctionBox>
-        </BaketProduct>    
+        </CartProduct>    
     </>
     );
 };

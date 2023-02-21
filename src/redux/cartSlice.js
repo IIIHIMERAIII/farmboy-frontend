@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-
 // const testdata = [
 // {
 //     title: "Soup - Knorr, Chicken Noodle",
@@ -40,8 +39,8 @@ import { createSlice } from "@reduxjs/toolkit";
 //     }  
 // ]
 
-export const baketSlice = createSlice({
-    name: 'baket',
+export const cartSlice = createSlice({
+    name: 'cart',
     initialState: {
         products: [],
     },
@@ -55,7 +54,7 @@ export const baketSlice = createSlice({
             }
             else {
                 const {title, price, _id } = action.payload
-                const tempProduct = { title, price, id:_id, qty: 1 };
+                const tempProduct = { title, price, id: _id, qty: 1 };
                 state.products.push(tempProduct);
             }
         },
@@ -79,5 +78,5 @@ export const baketSlice = createSlice({
     }
 });
 
-export const { addProduct, dellProduct, decreaseProductQuantity, increaseCartQuantity} = baketSlice.actions;
-export default baketSlice.reducer;
+export const { addProduct, dellProduct, decreaseProductQuantity, increaseCartQuantity} = cartSlice.actions;
+export default cartSlice.reducer;

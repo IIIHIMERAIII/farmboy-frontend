@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import baketReducer from '../redux/baketSlice'
+import cartReducer from '../redux/cartSlice'
 
 export default configureStore({
     reducer: {
-        baket: baketReducer
+        cart: cartReducer
     }
 })
