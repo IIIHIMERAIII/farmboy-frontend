@@ -1,43 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// const testdata = [
-// {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63ebdd17391ac39bf2662cf3",
-//     qty: 12
-//     },
-//     {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63ebdd17391ac39b123123f2662cf3",
-//     qty: 1
-//     },
-//     {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63ebdd1739112312ac39bf2662cf3",
-//     qty: 1
-//     },
-//     {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63ebdd123117391ac39bf2662cf3",
-//     qty: 1
-//     },
-//     {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63ebd123123d17391ac39bf2662cf3",
-//     qty: 1
-//     },
-//     {
-//     title: "Soup - Knorr, Chicken Noodle",
-//     price: "7.94",
-//     id: "63eb213321dd17391ac39bf2662cf3",
-//     qty: 1
-//     }  
-// ]
 
 export const cartSlice = createSlice({
     name: 'cart',
