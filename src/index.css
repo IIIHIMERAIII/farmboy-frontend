@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/primaryBg.jpg');
   background-size: cover;
-  padding: 15px;
   height: 100vh;
 }
 

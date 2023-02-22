@@ -1,14 +1,13 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-margin-right: auto;
 margin-left: auto;
-max-width: 1200px;
-@media screen and (max-width: 768px) {
-max-width: 700px
+margin-right: auto;
+max-width: 420px;
+@media screen and (min-width: 768px) {
+max-width: 760px
 }
-@media screen and (max-width: 480px) {
-max-width: 400px
+@media screen and (min-width: 1198px) {
+max-width: 1200px
 }
-
 `;

@@ -1,16 +1,19 @@
 import styled from "@emotion/styled";
 
 export const ProductCard = styled.li`
-width: 420px;
-height: 360px;
+display: flex;
 box-shadow: 1px 1px 82px -21px rgba(0,0,0,0.75);
 border-radius: 5px;
-padding: 15px;
-display: flex;
 align-items: center;
 justify-content: start;
 flex-direction: column;
 background-color: white;
+padding: 10px;
+width:360px;
+@media screen and (min-width: 768px) {
+width: 420px;
+height: 360px;
+padding: 15px;
 }
 `;
 
@@ -23,12 +26,17 @@ margin-bottom: 10px;
 
 export const InfoBox = styled.div`
 display:flex;
+@media screen and (min-width: 768px) {
 width:400px;
 gap:10px;
+}
 `;
 
 export const ProductDescr = styled.p`
+display:none;
+@media screen and (min-width: 768px){
 width: 300px;
+}
 `;
 
 export const PriceBox = styled.div`
@@ -64,6 +72,11 @@ padding: 5px;
 
 export const ImgFake = styled.div`
 height: 120px;
-width: 120px;
+width:200px;
 background-color: gray;
+margin-bottom: 20px;
+@media screen and (min-width: 768px) {
+
+
+}
 `;

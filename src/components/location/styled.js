@@ -1,7 +1,10 @@
 import styled from "@emotion/styled";
 
 export const LocationBox = styled.div`
+display:none;
+@media screen and (min-width: 768px) {
 display: flex;
+}
 `;
 
 export const Svg = styled.svg`

@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 
 
 export const CartBox = styled.div`
+width: 320px;
+margin-bottom: 20px;
+@media screen and (min-width: 768px){
 padding: 10px;
 width: 650px;
+}
 `;
 
 export const BackBtn = styled(Link)`
@@ -31,6 +35,7 @@ font-weight: 800;
 
 
 export const List = styled.ul`
+width: 320px;
 height: 500px;
 overflow-y: scroll;
 padding: 0;
