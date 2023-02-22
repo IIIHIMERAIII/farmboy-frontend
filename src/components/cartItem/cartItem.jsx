@@ -14,7 +14,6 @@ import {
     QuantityBtn,
     QuantityTitle,
     QuantitySvg,
-    SumTitle,
 } from "./styled";
 import sprite from '../../images/sprite.svg'
 
@@ -48,8 +47,6 @@ export const CartItem = ({ product }) => {
                         <use href={`${sprite}#circle-right`}/>
                     </QuantitySvg>
                 </QuantityBtn>
-                <SumTitle
-                >{ProductSum}</SumTitle>
                 <DellBtn
                     onClick={() => {
                                 dispatch(dellProduct(product.id));

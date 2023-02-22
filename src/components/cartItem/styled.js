@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 
 export const CartProduct = styled.li`
+gap:10px;
 padding: 7px 5px 7px 5px;
 justify-content: space-between;
 align-items: center;
@@ -15,7 +16,6 @@ padding: 15px 10px 15px 10px;
 `;
 
 export const ProductTitle = styled.span`
-
 @media screen and (min-width: 768px){
 font-size: 16px;
 width: 250px;
@@ -24,6 +24,7 @@ color:black;
 `;
 
 export const Price = styled.span`
+margin-left: auto;
 color: black;
 `;
 
@@ -31,7 +32,9 @@ export const FunctionBox = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
+@media screen and (min-width: 768px){
 width: 200px;
+}
 `;
 
 export const DellBtn = styled.button`
@@ -83,6 +86,3 @@ font-weight: 600;
 color:black;
 `;
 
-export const SumTitle = styled.span`
-color:black;
-`;
