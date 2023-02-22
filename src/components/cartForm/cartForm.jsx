@@ -23,7 +23,6 @@ export const CartForm = () => {
         if (phone && name !== '') {
             dispatch(addOrder({ name: name, number: phone, email: email || "" }));
             form.reset();
-            alert('Ми прийняли ваше замовлення');
             return
         }
         alert("Вкажіть номер телефону та ім'я")

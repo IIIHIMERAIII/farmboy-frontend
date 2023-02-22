@@ -19,9 +19,7 @@ import sprite from '../../images/sprite.svg'
 
 export const CartItem = ({ product }) => {
     const dispatch = useDispatch();
-    const ProductSum = (product.price * product.qty).toFixed(2);
-    console.log(product)
-
+    
     return (
     <>
         <CartProduct>

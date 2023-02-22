@@ -49,6 +49,7 @@ export const cartSlice = createSlice({
             else if (cart.length > 0) {
                 state.order.products.push(cart);
                 state.order.owner.push(owner)
+                return alert("Ваше замовлення відправлено в надійні руки")
             }
         },
     }
