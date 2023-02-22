@@ -15,11 +15,14 @@ margin-bottom: 40px;
 `;
 
 export const ContactBox = styled.div`
+display:none;
+@media screen and (min-width: 768px) {
 display: flex;
 flex-direction: column;
 text-align: center;
 gap: 20px;
 padding: 20px;
+}
 `;
 
 export const NavBox = styled.div`

@@ -7,14 +7,17 @@ color:black;
 `;
 
 export const Form = styled.form`
-width: 350px;
+width:auto;
 background-color:white;
 border-radius: 16px;
 height: 600px;
-padding: 15px;
 display: flex;
 flex-direction: column;
+padding: 15px;
 gap: 15px;
+@media screen and (min-width: 768px) {
+width: 350px;
+}
 `;
 
 export const Label = styled.label`

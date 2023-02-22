@@ -6,7 +6,6 @@ import { ProductItem } from "../productItem/productItem";
 
 export const Products = () => {
     const [products, setProducts] = useState([]);
-
     useEffect(() => {
         const fetchProducts = async () => {
             try {

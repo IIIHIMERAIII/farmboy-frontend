@@ -2,19 +2,25 @@ import styled from "@emotion/styled";
 
 
 export const CartProduct = styled.li`
-padding: 15px 10px 15px 10px;
+padding: 7px 5px 7px 5px;
 justify-content: space-between;
 align-items: center;
 display: flex;
 box-shadow: 0px 10px 27px 0px rgba(0,0,0,0.75);
 background-color: white;
 border-radius: 12px;
+@media screen and (min-width: 768px){
+padding: 15px 10px 15px 10px;
+}
 `;
 
 export const ProductTitle = styled.span`
+
+@media screen and (min-width: 768px){
 font-size: 16px;
 width: 250px;
 color:black;
+}
 `;
 
 export const Price = styled.span`

@@ -9,7 +9,7 @@ justify-content: start;
 flex-direction: column;
 background-color: white;
 padding: 10px;
-width:360px;
+width: 300px;
 @media screen and (min-width: 768px) {
 width: 420px;
 height: 360px;
@@ -50,8 +50,11 @@ padding-top: 10px;
 export const ProductPrice = styled.span`
 color: green;
 text-align: center;
-margin-right: 200px;
 font-size: 35px;
+margin-right:20px;
+@media screen and (min-width: 768px){
+margin-right: 200px;
+}
 `;
 
 export const AddBtn = styled.button`

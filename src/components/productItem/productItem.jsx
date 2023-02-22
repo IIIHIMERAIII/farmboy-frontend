@@ -14,6 +14,8 @@ import {
 export const ProductItem = ({ data }) => {
     const dispatch = useDispatch();
 
+    console.log(data)
+
     const onAddProduct = (id) => {
         const results = data.find(item => item._id === id)
             dispatch(addProduct(results))
