@@ -13,14 +13,15 @@ width: 650px;
 
 export const BackBtn = styled(Link)`
 fill:white;
+margin-right: auto;
 :hover, :focus {
     fill:green;
 }
 `;
 
 export const BackSvg = styled.svg`
-width: 40px;
-height:40px;
+width: 30px;
+height:30px;
 fill:inherit;
 `;
 
