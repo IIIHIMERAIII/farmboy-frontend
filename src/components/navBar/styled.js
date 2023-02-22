@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 export const NavBox = styled.div`
 height: 100px;
@@ -8,7 +9,7 @@ justify-content: space-between;
 width: 100%;
 `;
 
-export const CartBtn = styled.button`
+export const CartBtn = styled(Link)`
 display:flex;
 background-color: transparent;
 border: 2px solid white;

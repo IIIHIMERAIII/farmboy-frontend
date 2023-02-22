@@ -9,4 +9,5 @@ padding-right:15px;
 background-color: white;
 background-size: cover;
 justify-content: space-around;
+align-items: center;
 `;

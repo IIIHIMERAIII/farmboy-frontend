@@ -15,7 +15,6 @@ padding: 15px;
 display: flex;
 flex-direction: column;
 gap: 15px;
-margin-top: 80px;
 `;
 
 export const Label = styled.label`

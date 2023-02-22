@@ -1,16 +1,25 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
+
 
 export const CartBox = styled.div`
 padding: 10px;
 width: 650px;
 `;
 
-export const ScrollBox = styled.div`
-width: 650px;
-height: 800px;
-overflow-y: scroll;
-margin-top: 10px;
+export const BackBtn = styled(Link)`
+fill:white;
+:hover, :focus {
+    fill:green;
+}
 `;
+
+export const BackSvg = styled.svg`
+width: 40px;
+height:40px;
+fill:inherit;
+`;
+
 
 export const TitleSum = styled.p`
 border-bottom: 2px solid white;
@@ -22,13 +31,15 @@ font-weight: 800;
 
 
 export const List = styled.ul`
+height: 500px;
+overflow-y: scroll;
 padding: 0;
 margin:0;
 display: flex;
 flex-direction: column;
 gap: 12px;
 margin-top: 25px;
-padding-right: 12px;
+padding-right: 26px;
 `;
 
 
