@@ -7,6 +7,7 @@ import {
 import {
     CartProduct,
     ProductTitle,
+    Price,
     FunctionBox,
     DellBtn,
     DellSvg,
@@ -26,7 +27,7 @@ export const CartItem = ({ product }) => {
     <>
         <CartProduct>
             <ProductTitle>{product.title}</ProductTitle>
-                <span>{product.price}</span>
+                <Price>{product.price}</Price>
             <FunctionBox>
                 <QuantityBtn
                     onClick={() => {

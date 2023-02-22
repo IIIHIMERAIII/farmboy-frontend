@@ -1,4 +1,4 @@
-import { ProductsBar } from "../../components/productsBar/productsBar";
+import { LinkBar } from "../../components/linkBar/linkBar";
 import {Products} from '../../components/products/products'
 import { Main } from "./styled";
 import { Container } from '../../components/containers';
@@ -8,7 +8,7 @@ export const HomePage = () => {
     return (
     <Container>
         <Main>
-            <ProductsBar />
+            <LinkBar />
             <Products/>
         </Main>
     </Container>       

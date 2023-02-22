@@ -8,7 +8,7 @@ justify-content: space-between;
 width: 100%;
 `;
 
-export const Bag = styled.button`
+export const CartBtn = styled.button`
 display:flex;
 background-color: transparent;
 border: 2px solid white;

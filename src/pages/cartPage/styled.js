@@ -8,5 +8,5 @@ padding-left:15px;
 padding-right:15px;
 background-color: white;
 background-size: cover;
-justify-content: space-between;
+justify-content: space-around;
 `;

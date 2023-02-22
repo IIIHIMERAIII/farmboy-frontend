@@ -14,6 +14,11 @@ border-radius: 12px;
 export const ProductTitle = styled.span`
 font-size: 16px;
 width: 250px;
+color:black;
+`;
+
+export const Price = styled.span`
+color: black;
 `;
 
 export const FunctionBox = styled.div`
@@ -63,12 +68,15 @@ export const QuantitySvg = styled.svg`
 width: 25px;
 height: 25px;
 fill:inherit;
+color:black;
 `;
 
 export const QuantityTitle = styled.span`
 font-size: 18px;
 font-weight: 600;
+color:black;
 `;
 
 export const SumTitle = styled.span`
+color:black;
 `;

@@ -1,7 +1,7 @@
 import { CatalogBox, Button  } from "./styled";
 
 
-export const ProductsBar = () => {
+export const LinkBar = () => {
     return (
         <CatalogBox>
             <Button
