@@ -16,7 +16,7 @@ flex-direction: column;
 padding: 15px;
 gap: 15px;
 @media screen and (min-width: 768px) {
-width: 350px;
+width: 400px;
 }
 `;
 

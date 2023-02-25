@@ -10,10 +10,16 @@ display:flex;
 `;
 
 export const Img = styled.img`
+@media screen and (min-width: 768px){
 border-radius:50%;
+width: 200px;
+height:200px;
+}
+@media screen and (min-width: 1198px){
 width: 260px;
 height:260px;
 }
+
 `;
 
 export const TitleBox = styled.div`

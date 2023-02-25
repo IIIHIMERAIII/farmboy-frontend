@@ -28,10 +28,10 @@ export const ProductItem = ({ data }) => {
                     <ProductTitle>{product.title}</ProductTitle>
                     <InfoBox>
                         <ImgFake />
-                        <ProductDescr>{product.descr}</ProductDescr>
+                        <ProductDescr>{product.desc}</ProductDescr>
                     </InfoBox>
                     <PriceBox>
-                        <ProductPrice>{product.price}</ProductPrice>
+                        <ProductPrice>{product.price} ₴</ProductPrice>
                         <AddBtn
                             onClick={()=>onAddProduct(product._id)}
                         >Додати до кошику</AddBtn>

@@ -20,12 +20,14 @@ export const ProductTitle = styled.span`
 font-size: 16px;
 width: 250px;
 color:black;
+font-weight: 700;
 }
 `;
 
 export const Price = styled.span`
 margin-left: auto;
-color: black;
+color: green;
+font-weight: 700;
 `;
 
 export const FunctionBox = styled.div`

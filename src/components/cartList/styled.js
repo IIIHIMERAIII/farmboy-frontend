@@ -38,6 +38,13 @@ font-weight: 800;
 }
 `;
 
+export const SumNumber = styled.span`
+color:green;
+background:white;
+padding:10px;
+border-radius: 16px;
+`;
+
 
 export const List = styled.ul`
 padding: 0;
@@ -46,11 +53,8 @@ display: flex;
 flex-direction: column;
 gap:10px;
 @media screen and (min-width: 768px){
-width: 320px;
 height: 500px;
 overflow-y: scroll;
-
-
 gap: 12px;
 margin-top: 25px;
 padding-right: 26px;

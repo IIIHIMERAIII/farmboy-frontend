@@ -11,7 +11,7 @@ background-color: white;
 background-size: cover;
 justify-content: space-around;
 align-items: center;
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 1198px) {
+flex-direction:row;
 }
 `;

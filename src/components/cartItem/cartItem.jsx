@@ -24,7 +24,7 @@ export const CartItem = ({ product }) => {
     <>
         <CartProduct>
             <ProductTitle>{product.title}</ProductTitle>
-                <Price>{product.price}</Price>
+                <Price>{product.price} ₴</Price>
             <FunctionBox>
                 <QuantityBtn
                     onClick={() => {

@@ -11,6 +11,11 @@ background-color: white;
 padding: 10px;
 width: 300px;
 @media screen and (min-width: 768px) {
+width: 345px;
+height: 360px;
+padding: 10px;
+}
+@media screen and (min-width: 1198px) {
 width: 420px;
 height: 360px;
 padding: 15px;
@@ -27,15 +32,28 @@ margin-bottom: 10px;
 export const InfoBox = styled.div`
 display:flex;
 @media screen and (min-width: 768px) {
+width:200px
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+@media screen and (min-width: 1198px){
 width:400px;
 gap:10px;
+flex-direction: row;
 }
 `;
 
 export const ProductDescr = styled.p`
 display:none;
 @media screen and (min-width: 768px){
+display:flex;
+color:black;
+font-size:12px;
+}
+@media screen and (min-width: 1198px) {
 width: 300px;
+font-size:15px
 }
 `;
 
@@ -53,6 +71,9 @@ text-align: center;
 font-size: 35px;
 margin-right:20px;
 @media screen and (min-width: 768px){
+margin-right: 20px;
+}
+@media screen and (min-width: 1198px){
 margin-right: 200px;
 }
 `;
@@ -78,8 +99,7 @@ height: 120px;
 width:200px;
 background-color: gray;
 margin-bottom: 20px;
-@media screen and (min-width: 768px) {
-
-
+@media screen and (min-width: 1198px) {
+margin-bottom: auto;
 }
 `;

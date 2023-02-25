@@ -1,5 +1,11 @@
 
-import { CategoryBox, Img, TitleBox, Title, SubTitle} from "./styled";
+import {
+    CategoryBox,
+    Img,
+    TitleBox,
+    Title,
+    SubTitle
+} from "./styled";
 import milk from '../../images/milk.jpg'
 
 export const InfoBar= () => {

@@ -5,6 +5,7 @@ import {
     BackBtn,
     BackSvg,
     TitleSum,
+    SumNumber,
     List,
     EmptyBox,
     EmptyTitle,
@@ -33,7 +34,7 @@ export const CartList = () => {
             {total === 0
                 ? <TitleSum>Тут ми порахуемо суму замолвення, але нажаль...</TitleSum>
 
-                : <TitleSum>Сумма вашого замовлення: {total.toFixed(2)}</TitleSum>
+                : <TitleSum>Сумма вашого замовлення: <SumNumber>{total.toFixed(2)} ₴</SumNumber> </TitleSum>
             }
             <List
             >
