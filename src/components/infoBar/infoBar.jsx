@@ -8,7 +8,7 @@ import img1 from '../../images/img1.jpg'
 import img2 from '../../images/img2.jpg'
 import img3 from '../../images/img3.jpg'
 
-const images = [{ img: img1, title: "Молоко" }, { img: img2, title: "Сири" }, { img:img3, title:"Творожна продуція" }];
+const images = [{ img: img1, title: "Молоко" }, { img: img2, title: "Сири" }, { img:img3, title:"Творог" }];
 export const InfoBar = () => {
 
     return (

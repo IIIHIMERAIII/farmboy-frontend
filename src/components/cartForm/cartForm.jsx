@@ -1,4 +1,5 @@
-import { useDispatch} from "react-redux";
+import Notiflix from "notiflix";
+import { useDispatch } from "react-redux";
 import {
     Form,
     InfoText,
@@ -25,7 +26,7 @@ export const CartForm = () => {
             form.reset();
             return
         }
-        alert("Вкажіть номер телефону та ім'я")
+        Notiflix.Notify.failure("Вкажіть номер телефону та ім'я")
     };
 
     return (

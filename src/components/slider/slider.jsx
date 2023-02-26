@@ -2,9 +2,7 @@ import { useState } from "react";
 
 
 export const Slider = ({ images}) => {
-    console.log(images)
-
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const goToNextImage = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);

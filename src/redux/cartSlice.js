@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+import Notiflix from "notiflix";
 
 export const cartSlice = createSlice({
     name: 'cart',
@@ -16,11 +16,13 @@ export const cartSlice = createSlice({
             const itemIndex = state.products.findIndex(product => product.id === action.payload._id)
             if (itemIndex >= 0) {
                 state.products[itemIndex].qty += 1;
+                Notiflix.Notify.success("Товар додано до кошику")
             }
             else {
                 const {title, price, _id } = action.payload
                 const tempProduct = { title, price, id: _id, qty: 1 };
                 state.products.push(tempProduct);
+                Notiflix.Notify.success("Товар додано до кошику")
             }
         },
         dellProduct(state, action) {
@@ -44,12 +46,12 @@ export const cartSlice = createSlice({
             const cart = state.products;
             const owner = action.payload;
             if (cart.length === 0) {
-                return alert("Ви ще нічого не додали до кошику :(")
+                Notiflix.Notify.failure("Ви ще нічого не додали до кошику :(")
             }
             else if (cart.length > 0) {
                 state.order.products.push(cart);
                 state.order.owner.push(owner)
-                return alert("Ваше замовлення відправлено в надійні руки")
+                Notiflix.Notify.failure("Ваше замовлення відправлено в надійні руки")
             }
         },
     }
