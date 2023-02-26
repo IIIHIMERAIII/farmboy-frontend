@@ -7,7 +7,7 @@ border-radius: 5px;
 align-items: center;
 justify-content: start;
 flex-direction: column;
-background-color: white;
+background-color: tan;
 padding: 10px;
 width: 300px;
 @media screen and (min-width: 768px) {

@@ -9,29 +9,6 @@ display:flex;
 }
 `;
 
-export const Img = styled.img`
-@media screen and (min-width: 768px){
-border-radius:50%;
-width: 200px;
-height:200px;
-}
-@media screen and (min-width: 1198px){
-width: 260px;
-height:260px;
-}
-
-`;
-
-export const TitleBox = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-`;
-
-export const Title = styled.h1`
-color: white;
-`;
-
 export const SubTitle = styled.p`
 color: white;
 width: 300px;
