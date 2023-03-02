@@ -23,10 +23,11 @@ padding: 15px;
 `;
 
 export const ProductTitle = styled.p`
-font-size: 25px;
 border-bottom: 2px solid black;
 border-top: 2px solid black;
 margin-bottom: 10px;
+font-size: 25px;
+font-weight: 700;
 `;
 
 export const InfoBox = styled.div`
@@ -88,6 +89,8 @@ outline: none;
 border: none;
 transition: all 0.3s ease-in-out;
 padding: 5px;
+font-family: inherit;
+font-weight: 700;
 :hover, :focus {
     background-color: green;
     transform: scale(1.1);
