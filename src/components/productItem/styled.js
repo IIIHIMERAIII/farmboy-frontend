@@ -22,15 +22,35 @@ padding: 15px;
 }
 `;
 
+export const TitleBox = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+width:290px;
+@media screen and (min-width: 768px) {
+width:340px;
+}
+@media screen and (min-width: 1198px) {
+width: 390px;
+}
+`;
+
 export const ProductTitle = styled.p`
+padding: 5px;
 border-bottom: 2px solid black;
 border-top: 2px solid black;
-margin-bottom: 10px;
 font-size: 25px;
 font-weight: 700;
 `;
 
+export const InfoSvg = styled.svg`
+width: 25px;
+height: 25px;
+fill: white;
+`;
+
 export const InfoBox = styled.div`
+margin-top:10px;
 display:flex;
 @media screen and (min-width: 768px) {
 width:200px
@@ -59,11 +79,19 @@ font-size:15px
 `;
 
 export const PriceBox = styled.div`
-display: flex;
-align-items: center;
 margin-top: auto;
 border-top: 2px solid black;
 padding-top: 10px;
+display: flex;
+align-items: center;
+width:290px;
+justify-content: space-between;
+@media screen and (min-width: 768px) {
+width:340px;
+}
+@media screen and (min-width: 1198px) {
+width: 390px;
+}
 `;
 
 export const ProductPrice = styled.span`
@@ -79,8 +107,9 @@ margin-right: 200px;
 }
 `;
 
-export const AddBtn = styled.button`
+export const ProductBtn = styled.button`
 width: 80px;
+height: 45px;
 background-color: black;
 color:white;
 cursor: pointer;

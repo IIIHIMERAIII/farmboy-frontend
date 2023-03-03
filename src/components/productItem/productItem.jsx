@@ -1,20 +1,35 @@
+import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {addProduct} from "../../redux/cartSlice";
 import {
     ProductCard,
+    TitleBox,
     ProductTitle,
+    InfoSvg,
     InfoBox,
     ProductDescr,
     PriceBox,
     ProductPrice,
-    AddBtn,
+    ProductBtn,
     ImgFake
 } from "./styled";
+import { PoductModal } from "../productModal/productModal";
+import sprite from '../../images/sprite.svg'
 
 export const ProductItem = ({ data }) => {
+    const [showModal, setShowModal] = useState(false);
+    const [modalData, setModalData] = useState({})
     const dispatch = useDispatch();
 
-    console.log(data)
+    const handleShowModal = (id) => {
+    const results = data.find(item => item._id === id)
+        setShowModal(true);
+        setModalData(results)
+    };
+
+    const handleCloseModal = () => {
+    setShowModal(false);
+    };
 
     const onAddProduct = (id) => {
         const results = data.find(item => item._id === id)
@@ -25,19 +40,35 @@ export const ProductItem = ({ data }) => {
         <>
             {data.map(product => (
                 <ProductCard key={product._id}>
-                    <ProductTitle>{product.title}</ProductTitle>
+                    <TitleBox>
+                        <ProductTitle>{product.title}</ProductTitle>
+                        <ProductBtn
+                        onClick={()=>handleShowModal(product._id)}
+                        >
+                            <InfoSvg>
+                                <use href={`${sprite}#info`}/>
+                            </InfoSvg>
+                        </ProductBtn>
+                    </TitleBox>
                     <InfoBox>
                         <ImgFake />
                         <ProductDescr>{product.desc}</ProductDescr>
                     </InfoBox>
                     <PriceBox>
                         <ProductPrice>{product.price} ₴</ProductPrice>
-                        <AddBtn
+                        <ProductBtn
                             onClick={()=>onAddProduct(product._id)}
-                        >Додати до кошику</AddBtn>
+                        >Додати до кошику</ProductBtn>
                     </PriceBox>
-            </ProductCard>
-        ))}
+                </ProductCard>  
+            ))}
+                {showModal && (
+                <PoductModal
+                    close={handleCloseModal}
+                    product={modalData}
+                    data={data}
+                />
+            )}
         </>
     );
 };
