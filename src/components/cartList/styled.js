@@ -14,20 +14,6 @@ margin-right:10px;
 }
 `;
 
-export const BackBtn = styled(Link)`
-fill:white;
-margin-right: auto;
-:hover, :focus {
-    fill:green;
-}
-`;
-
-export const BackSvg = styled.svg`
-width: 30px;
-height:30px;
-fill:inherit;
-`;
-
 
 export const TitleSum = styled.p`
 font-size: 18px;

@@ -2,8 +2,6 @@ import 'simplebar-react/dist/simplebar.min.css';
 import { useSelector } from "react-redux";
 import {
     CartBox,
-    BackBtn,
-    BackSvg,
     TitleSum,
     SumNumber,
     ScrollBar,
@@ -23,13 +21,6 @@ export const CartList = () => {
 
     return (
         <>
-        <BackBtn
-            to='/'
-        >
-            <BackSvg>
-                <use href={`${sprite}#arrow-back`}/>
-            </BackSvg>
-        </BackBtn>
         <CartBox>
             {total === 0
                 ? <TitleSum>Тут ми порахуемо суму замолвення, але нажаль...</TitleSum>

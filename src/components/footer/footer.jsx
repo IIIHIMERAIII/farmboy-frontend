@@ -16,14 +16,16 @@ export const Footer = () => {
                     <NavBox>
                         <NavLink
                         to='/'
-                        >Головна</NavLink>
-                        <NavLink>Контакти</NavLink>
+                        >Головна
+                        </NavLink>
                         <NavLink
                         to='/about'
-                        >Про нас</NavLink>
+                        >Контакти
+                        </NavLink>
                         <NavLink
-                            to={'/cart'}
-                        >Замовлення</NavLink>
+                            to='/cart'
+                        >Замовлення
+                        </NavLink>
                     </NavBox>
                     <SocialBox>
                         <SocialLink>
