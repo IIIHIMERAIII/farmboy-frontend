@@ -1,13 +1,13 @@
-
-import { useSelector} from "react-redux";
+import 'simplebar-react/dist/simplebar.min.css';
+import { useSelector } from "react-redux";
 import {
     CartBox,
     BackBtn,
     BackSvg,
     TitleSum,
     SumNumber,
+    ScrollBar,
     List,
-    EmptyBox,
     EmptyTitle,
     Svg,
 } from "./styled";
@@ -15,11 +15,11 @@ import { CartItem } from "../cartItem/cartItem";
 import sprite from '../../images/sprite.svg'
 
 
-
 export const CartList = () => {
     const cart = useSelector(state => state.cart.products);
     const prices = cart.map((product) => product.price * product.qty)
     const total = prices.reduce((acc, curr) => acc + curr, 0);
+
 
     return (
         <>
@@ -36,23 +36,23 @@ export const CartList = () => {
 
                 : <TitleSum>Сумма вашого замовлення: <SumNumber>{total.toFixed(2)} ₴</SumNumber> </TitleSum>
             }
-            <List
-            >
-            {  cart.length
-                ? cart.map((data) => (
-                    <CartItem
-                            key={data.id}
-                            product={data}
-                    />
-                ))
-                :   <EmptyBox>
+                {cart.length
+                ?   <ScrollBar>
+                        <List> {
+                        cart.map((data) => (
+                            <CartItem
+                                key={data.id}
+                                product={data}
+                            />))}
+                        </List>
+                     </ScrollBar>
+                :   <>
                         <Svg>
                             <use href={`${sprite}#empty-cart`}/>    
                         </Svg>
                         <EmptyTitle>Ви ще нічого не додали</EmptyTitle>
-                    </EmptyBox>
-            }
-            </List>
+                    </>
+                }
         </CartBox>
         </>
     );

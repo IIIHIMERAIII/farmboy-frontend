@@ -20,9 +20,10 @@ margin-bottom: 20px;
 `;
 
 export const PageTitle = styled.h1`
+text-align: center;
 font-size: 55px;
 color:white;
-font-family: 'Lobster', cursive;;
+font-family: 'Lobster', cursive;
 `;
 
 export const PageSubtitle = styled.p`
@@ -34,7 +35,7 @@ export const Note = styled.div`
 background-size: contain;
 background-repeat: no-repeat;
 height: 350px;
-width: 350px;
+width: 320px;
 margin-top: 65px;
 `;
 

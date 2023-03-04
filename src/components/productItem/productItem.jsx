@@ -25,10 +25,12 @@ export const ProductItem = ({ data }) => {
     const results = data.find(item => item._id === id)
         setShowModal(true);
         setModalData(results)
+        document.body.classList.add("noScroll")
     };
 
     const handleCloseModal = () => {
-    setShowModal(false);
+        setShowModal(false);
+        document.body.classList.remove("noScroll")
     };
 
     const onAddProduct = (id) => {

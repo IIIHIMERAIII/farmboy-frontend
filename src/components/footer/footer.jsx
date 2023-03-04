@@ -1,31 +1,18 @@
-import { Container } from "../containers";
 import {
     FooterBox,
     ContactWrapper,
-    ContactBox,
     NavBox,
     NavLink,
-    ContactTitle,
-    ContactText,
     SocialBox,
     SocialLink,
     Svg
 } from "./styled";
-import footerBg from '../../images/footerBg.jpg'
 import sprite from '../../images/sprite.svg'
 
 export const Footer = () => {
     return (
-        <Container>
-            <FooterBox
-                style={{ backgroundImage: `url(${footerBg})` }}
-            >
+        <FooterBox>
             <ContactWrapper>
-                    <ContactBox>
-                        <ContactTitle>Зв'язатись з нами просто!</ContactTitle>
-                        <ContactText>+380 560 323</ContactText>
-                        <ContactText>HuseynFarm@gmail.com</ContactText>
-                    </ContactBox>
                     <NavBox>
                         <NavLink
                         to='/'
@@ -35,7 +22,7 @@ export const Footer = () => {
                         to='/about'
                         >Про нас</NavLink>
                         <NavLink
-                        to='/cart'
+                            to={'/cart'}
                         >Замовлення</NavLink>
                     </NavBox>
                     <SocialBox>
@@ -51,7 +38,6 @@ export const Footer = () => {
                         </SocialLink>
                     </SocialBox>
             </ContactWrapper>
-            </FooterBox>
-        </Container>
+        </FooterBox>
     );
 };

@@ -1,11 +1,12 @@
 import { Main, Img, PageTitle, PageSubtitle, Note, NoteText,  } from "./styled";
-import { Container } from '../../components/containers';
 import aboutBg from '../../images/aboutBg.jpg'
 import note from '../../images/note.png'
 
 export const AboutPage = () => {
+    
+    window.scrollTo(0, 0);
+
     return (
-    <Container>
             <Main>
                 <Img
                 style={{ backgroundImage: `url(${aboutBg})` }}
@@ -23,7 +24,6 @@ export const AboutPage = () => {
                         ModjachedShadiow@gmail.com<br />
                     </NoteText>
                 </Note>
-        </Main>
-    </Container>       
+        </Main>    
 );
 };

@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import Notiflix from "notiflix";
+// import MOCK_DATA from '../Fakebd/MOCK_DATA.json'
 
 export const cartSlice = createSlice({
     name: 'cart',

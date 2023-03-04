@@ -16,6 +16,7 @@ padding: 15px 10px 15px 10px;
 `;
 
 export const ProductTitle = styled.span`
+width:110px;
 @media screen and (min-width: 768px){
 font-size: 16px;
 width: 250px;

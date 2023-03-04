@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -27,6 +31,18 @@ p{
 ul {
   list-style: none;
 
+}
+
+/* adaptiveBg */
+
+.main {
+  background-image: url('./images/mainBg.jpg');
+}
+
+.cart {
+  background-image: url('./images/mainBg.jpg');
+  background-size: cover;
+  background-position: bottom;
 }
 
 /* Slider */
@@ -114,4 +130,19 @@ object-fit: cover;
 
 .slider__button--next {
   right: 0;
+}
+
+/* cart scroll  */
+
+.simplebar-track {
+  background-color: rgba(0, 0, 0, 0.30);
+
+}
+
+.simplebar-track.simplebar-vertical{
+  width: 20px;
+}
+
+.simplebar-scrollbar::before{
+background-color: green;
 }

@@ -1,18 +1,15 @@
 import { Main} from "./styled";
-import { Container } from '../../components/containers';
 import { CartList } from "../../components/cartList/cartList";
 import { CartForm } from "../../components/cartForm/cartForm";
-import cartBg from '../../images/cartBg.jpg'
 
 export const CartPage = () => {
+    
+    window.scrollTo(0, 0);
+
     return (
-    <Container>
-            <Main
-                style={{ backgroundImage: `url(${cartBg})` }}
-            >
-            <CartList />
-            <CartForm />
-            </Main>
-    </Container>       
+    <Main>
+        <CartList/>
+        <CartForm />
+    </Main>
 );
 };

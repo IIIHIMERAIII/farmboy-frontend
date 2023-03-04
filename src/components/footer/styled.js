@@ -1,34 +1,23 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
-export const FooterBox = styled.div`
+export const FooterBox = styled.footer`
 display: flex;
 align-items: center;
-justify-content: center
-height: 220px;
-background-size: cover;
-border-top: 2px solid black;
+justify-content: center;
+height: 160px;
+border-top: 1px solid white;
 border-bottom-left-radius: 16px;
 border-bottom-right-radius: 16px;
-padding: 15px 15px 60px 15px;
 margin-bottom: 40px;
+background: rgba(0, 0, 0, 0.55);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3px);
 `;
 
-export const ContactBox = styled.div`
-display:none;
-@media screen and (min-width: 768px) {
-display: flex;
-flex-direction: column;
-text-align: center;
-gap: 20px;
-padding: 20px;
-}
-`;
 
 export const NavBox = styled.div`
 display: flex;
-flex-direction: column;
-text-align: center;
 gap: 20px;
 padding: 20px;
 `;
@@ -47,23 +36,14 @@ transition: all 0.3s ease-in-out;
 export const ContactWrapper = styled.section`
 display: flex;
 justify-content: space-around;
+align-items: center;
 width: 100%;
 border-bottom: 1px solid white;
 `;
 
-export const ContactTitle = styled.p`
-color:white;
-font-size: 30px;
-`;
-
-export const ContactText = styled.p`
-color:white;
-font-size: 16px;
-`;
 
 export const SocialBox = styled.div`
 display:flex;
-flex-direction: column;
 align-items: center;
 gap: 50px;
 padding: 20px;

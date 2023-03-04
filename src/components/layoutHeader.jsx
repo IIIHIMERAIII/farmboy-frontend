@@ -1,9 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { Header } from "./header/header";
-import headerBg from '../images/headerBg.jpg'
 import { NavBar } from './navBar/navBar';
 import { HeaderBox } from './header/styled';
-import { Container } from './containers';
 
 
 export const LayoutHeader = () => {
@@ -13,13 +11,9 @@ export const LayoutHeader = () => {
     return <Header/>;
   } else {
       return (
-        <Container>
-            <HeaderBox
-                style={{ backgroundImage: `url(${headerBg})` }}
-            >
+            <HeaderBox>
                 <NavBar />
             </HeaderBox>
-          </Container>
       )
   }
 }

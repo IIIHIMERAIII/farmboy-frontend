@@ -1,13 +1,16 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
-
+import SimpleBar from 'simplebar-react';
 
 export const CartBox = styled.div`
-
-margin-bottom: 20px;
+border-bottom: 2px solid white;
+margin-bottom: 10px;
+padding-bottom:10px;
 @media screen and (min-width: 768px){
 padding: 10px;
 width: 650px;
+height: 650px;
+margin-right:10px;
 }
 `;
 
@@ -45,6 +48,18 @@ padding:10px;
 border-radius: 16px;
 `;
 
+export const ScrollBar = styled(SimpleBar)`
+width:320px;
+@media screen and (min-width: 768px){
+height:500px;
+display:flex;
+width:auto;
+}
+@media screen and (min-width: 1198px){
+height: 650px;
+}
+`;
+
 
 export const List = styled.ul`
 padding: 0;
@@ -53,22 +68,10 @@ display: flex;
 flex-direction: column;
 gap:10px;
 @media screen and (min-width: 768px){
-height: 500px;
-overflow-y: scroll;
 gap: 12px;
 margin-top: 25px;
-padding-right: 26px;
+padding-right: 30px;
 }
-`;
-
-
-export const EmptyBox = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: 60px;
-gap: 35px;
 `;
 
 export const EmptyTitle = styled.p`
@@ -79,7 +82,13 @@ font-weight: 800;
 `;
 
 export const Svg = styled.svg`
+position: relative;
+left: 90px;
 width: 200px;
 height: 200px;
 fill:white;
+@media screen and (min-width: 768px) {
+  top: 20px;
+  left: 220px;
+}
 `;
