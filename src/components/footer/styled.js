@@ -18,8 +18,12 @@ backdrop-filter: blur(3px);
 
 export const NavBox = styled.div`
 display: flex;
+flex-direction:column;
+text-align: center;
 gap: 20px;
-padding: 20px;
+@media screen and (min-width: 768px){
+flex-direction:row;
+}
 `;
 
 export const NavLink = styled(Link)`
@@ -39,6 +43,8 @@ justify-content: space-around;
 align-items: center;
 width: 100%;
 border-bottom: 1px solid white;
+padding-top:20px;
+padding-bottom:20px;
 `;
 
 
@@ -46,8 +52,6 @@ export const SocialBox = styled.div`
 display:flex;
 align-items: center;
 gap: 50px;
-padding: 20px;
-border-radius: 6px;
 `;
 
 export const SocialLink = styled.a`
