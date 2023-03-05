@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import Notiflix from "notiflix";
+import { SendOrder } from "../api/products";
 // import MOCK_DATA from '../Fakebd/MOCK_DATA.json'
 
 export const cartSlice = createSlice({
@@ -7,7 +8,7 @@ export const cartSlice = createSlice({
     initialState: {
         products: [],
         order: {
-            owner: [],
+            owner: {},
             products: [],
         },
     },
@@ -50,9 +51,12 @@ export const cartSlice = createSlice({
                 Notiflix.Notify.failure("Ви ще нічого не додали до кошику :(")
             }
             else if (cart.length > 0) {
-                state.order.products.push(cart);
-                state.order.owner.push(owner)
-                Notiflix.Notify.failure("Ваше замовлення відправлено в надійні руки")
+                state.order.products.push(...cart);
+                state.order.owner = owner;
+                SendOrder(state.order)
+                state.products = [];
+                document.querySelector('#order-form').reset()
+                Notiflix.Notify.success("Ваше замовлення відправлено в надійні руки")
             }
         },
     }

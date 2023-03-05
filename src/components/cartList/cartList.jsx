@@ -1,5 +1,5 @@
 import 'simplebar-react/dist/simplebar.min.css';
-import { useSelector } from "react-redux";
+import {useSelector } from "react-redux";
 import {
     CartBox,
     TitleSum,
@@ -19,13 +19,14 @@ export const CartList = () => {
     const total = prices.reduce((acc, curr) => acc + curr, 0);
 
 
+
     return (
         <>
         <CartBox>
             {total === 0
                 ? <TitleSum>Тут ми порахуемо суму замолвення, але нажаль...</TitleSum>
 
-                : <TitleSum>Сумма вашого замовлення: <SumNumber>{total.toFixed(2)} ₴</SumNumber> </TitleSum>
+                : <TitleSum>Сумма вашого замовлення: <SumNumber id='total'>{total.toFixed(2)} ₴</SumNumber> </TitleSum>
             }
                 {cart.length
                 ?   <ScrollBar>
