@@ -33,16 +33,17 @@ ul {
 
 }
 
-/* adaptiveBg */
+/* header Cart button animation */
 
-.main {
-  background-image: url('./images/mainBg.jpg');
+.header-button {
+  transform: scale(1);
+  animation: pulse 2s infinite;
+
 }
 
-.cart {
-  background-image: url('./images/mainBg.jpg');
-  background-size: cover;
-  background-position: bottom;
+.header-button:hover,
+:focus {
+  animation: none;
 }
 
 
