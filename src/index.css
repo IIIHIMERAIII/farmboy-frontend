@@ -45,17 +45,6 @@ ul {
   background-position: bottom;
 }
 
-/* cart button infinity animation */
-
-.header-button{
-  transform: scale(1);
-  animation: pulse 2s infinite;
-  
-}
-
-.header-button:hover, :focus{
-    animation: none;
-}
 
 @keyframes pulse {
   0% {

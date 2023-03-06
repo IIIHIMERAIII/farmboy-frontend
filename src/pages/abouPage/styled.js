@@ -6,7 +6,6 @@ padding-top:25px;
 padding-bottom: 25px;
 padding-left:15px;
 padding-right:15px;
-background-color: white;
 `;
 
 export const Img = styled.div`
@@ -17,6 +16,7 @@ height: 450px;
 background-size: cover;
 border-radius: 16px;
 margin-bottom: 20px;
+box-shadow: 10px 0px 69px 39px rgba(0,0,0,0.75);
 `;
 
 export const PageTitle = styled.h1`
@@ -27,6 +27,7 @@ font-family: 'Lobster', cursive;
 `;
 
 export const PageSubtitle = styled.p`
+color:white;
 font-size: 18px;
 font-family: 'Sofia Sans Semi Condensed', sans-serif;
 `;
@@ -47,4 +48,5 @@ rotate: 3deg;
 color:#010c62;
 font-family: 'Marck Script', cursive;
 font-size: 18px;
+letter-spacing: 1.2px;
 `;

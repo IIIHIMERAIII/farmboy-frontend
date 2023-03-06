@@ -24,7 +24,7 @@ export const Footer = () => {
                         </NavLink>
                         <NavLink
                             to='/cart'
-                        >Замовлення
+                        >Кошик
                         </NavLink>
                     </NavBox>
                     <SocialBox>
@@ -36,6 +36,11 @@ export const Footer = () => {
                         <SocialLink>
                             <Svg>
                                 <use href={`${sprite}#viber`}/>                                
+                            </Svg>
+                        </SocialLink>
+                        <SocialLink>
+                            <Svg>
+                                <use href={`${sprite}#phone`}/>                                
                             </Svg>
                         </SocialLink>
                     </SocialBox>

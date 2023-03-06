@@ -8,6 +8,15 @@ justify-content: space-between;
 width: 100%;
 `;
 
+export const Title = styled.p`
+display: none;
+@media screen and (min-width: 768px) {
+display: flex;
+color: white;
+font-size: 25px;
+}
+`;
+
 export const CartBtn = styled(Link)`
 display:flex;
 background-color: transparent;

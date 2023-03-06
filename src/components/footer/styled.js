@@ -44,7 +44,7 @@ align-items: center;
 width: 100%;
 border-bottom: 1px solid white;
 padding-top:20px;
-padding-bottom:20px;
+padding-bottom:40px;
 `;
 
 

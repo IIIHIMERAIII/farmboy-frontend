@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { SubTitle } from "./styled";
 
-
-export const Slider = ({ images}) => {
+export const Slider = ({ images, subTitles}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const goToNextImage = () => {
@@ -9,12 +9,24 @@ export const Slider = ({ images}) => {
   };
 
   const goToPrevImage = () => {
-    setCurrentImageIndex(
-      currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1
-    );
+    setCurrentImageIndex(currentImageIndex === 0 ? images.length - 1 : currentImageIndex - 1);
+  };
+
+  const currentSubtitle = (index) => {
+    switch(index) {
+      case 0:
+        return subTitles[0];
+      case 1:
+        return subTitles[1];
+      case 2:
+        return subTitles[2];
+      default:
+        return subTitles[0];
+    }
   };
 
   return (
+    <>
     <div className="slider">
       <div className="slider__image-container">
         {images.map((image, index) => (
@@ -41,6 +53,8 @@ export const Slider = ({ images}) => {
       <button className="slider__button slider__button--next" onClick={goToNextImage}>
         {">"}
       </button>
-    </div>
+      </div>
+      <SubTitle>{`${currentSubtitle(currentImageIndex)}`}</SubTitle>
+    </>
   );
 };

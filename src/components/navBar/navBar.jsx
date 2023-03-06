@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
-import { Location } from "../location/location";
 import { Logo } from "../logo/logo";
-import { NavBox, CartBtn , Svg} from "./styled";
+import { NavBox, Title, CartBtn , Svg} from "./styled";
 import sprite from '../../images/sprite.svg'
 
 export const NavBar = () => {
@@ -13,7 +12,7 @@ export const NavBar = () => {
     return (
     <NavBox>
         <Logo />
-            <Location />
+            <Title>Чому варто обрати саме нас</Title>
             {location.pathname === '/'
                 ?
                     <CartBtn

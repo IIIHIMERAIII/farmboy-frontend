@@ -1,28 +1,17 @@
-import { Route, Routes, useLocation} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import { LayoutHeader } from "./components/layoutHeader";
 import { LayoutFooter } from "./components/layoutFooter";
 import { HomePage } from './pages/homePage/homePage'
 import { CartPage } from "./pages/cartPage/cartPage";
 import { AboutPage } from './pages/abouPage/aboutPage'
 import { Container } from "./components/containers";
-
+import mainBg from './images/mainBg.jpg'
 
 function App() {
-  const location = useLocation()
-
-  let current = "";
-    
-  if (location.pathname === '/') {
-      current = "main"
-    }
-    else {
-      current = "cart"
-    }
-
 
   return (
     <Container
-      className={current}
+      style={{ backgroundImage: `url(${mainBg})` }}
       >
         <LayoutHeader/>
           <Routes>

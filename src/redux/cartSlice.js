@@ -18,13 +18,13 @@ export const cartSlice = createSlice({
             const itemIndex = state.products.findIndex(product => product.id === action.payload._id)
             if (itemIndex >= 0) {
                 state.products[itemIndex].qty += 1;
-                Notiflix.Notify.success("Товар додано до кошику")
+                Notiflix.Notify.success("Товар додано до кошику",{position: 'left-top'})
             }
             else {
                 const {title, price, _id } = action.payload
                 const tempProduct = { title, price, id: _id, qty: 1 };
                 state.products.push(tempProduct);
-                Notiflix.Notify.success("Товар додано до кошику")
+                Notiflix.Notify.success("Товар додано до кошику",{position: 'left-top'})
             }
         },
         dellProduct(state, action) {

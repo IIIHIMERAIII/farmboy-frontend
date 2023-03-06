@@ -11,14 +11,3 @@ justify-content: center;
 gap: 80px;
 }
 `;
-
-export const SubTitle = styled.p`
-@media screen and (min-width: 768px){
-display:none;
-}
-@media screen and (min-width: 1198px){
-color: white;
-width: 300px;
-display:flex;
-}
-`;
