@@ -1,5 +1,5 @@
 import { Main, Img, PageTitle, PageSubtitle, ContactBox, Note, NoteText, GoogleIframe, } from "./styled";
-import aboutBg from '../../images/aboutBg.jpg'
+import aboutBg from '../../images/aboutBg.webp'
 import note from '../../images/note.png'
 
 export const AboutPage = () => {

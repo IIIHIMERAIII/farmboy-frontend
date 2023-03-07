@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./images/primaryBg.jpg');
+  background-image: url('./images/primaryBg.webp');
   background-size: cover;
   height: 100vh;
 }

@@ -5,7 +5,7 @@ import { HomePage } from './pages/homePage/homePage'
 import { CartPage } from "./pages/cartPage/cartPage";
 import { AboutPage } from './pages/abouPage/aboutPage'
 import { Container } from "./components/containers";
-import mainBg from './images/mainBg.jpg'
+import mainBg from './images/mainBg.webp'
 
 function App() {
 

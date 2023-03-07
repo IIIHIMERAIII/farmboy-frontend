@@ -14,6 +14,7 @@ align-items: center;
 display: flex;
 height: 450px;
 background-size: cover;
+background-position: right;
 border-radius: 16px;
 margin-bottom: 20px;
 box-shadow: 10px 0px 69px 39px rgba(0,0,0,0.75);
