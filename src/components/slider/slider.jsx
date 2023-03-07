@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { SubTitle } from "./styled";
+import { SubTitle, Svg } from "./styled";
+import sprite from '../../images/sprite.svg'
 
 export const Slider = ({ images, subTitles}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -48,10 +49,14 @@ export const Slider = ({ images, subTitles}) => {
         ))}
       </div>
       <button className="slider__button slider__button--prev" onClick={goToPrevImage}>
-        {"<"}
+          <Svg>
+            <use href={`${sprite}#arrow-left`}/>   
+          </Svg>
       </button>
       <button className="slider__button slider__button--next" onClick={goToNextImage}>
-        {">"}
+          <Svg>
+            <use href={`${sprite}#arrow-right`}/>   
+          </Svg>
       </button>
       </div>
       <SubTitle>{`${currentSubtitle(currentImageIndex)}`}</SubTitle>

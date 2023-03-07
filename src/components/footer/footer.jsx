@@ -8,8 +8,20 @@ import {
     Svg
 } from "./styled";
 import sprite from '../../images/sprite.svg'
+import Notiflix from "notiflix";
 
 export const Footer = () => {
+    // function onCopyLink(event) {
+    //   const item = event.target.getAttribute('item');
+    //     navigator.clipboard.writeText(item)
+    //     Notiflix.Notify.success("Скопійовано");
+    // }
+
+    const handleClick = (event) => {
+        event.preventDefault();
+        window.location.href = "tel:1234567890"; // замініть номером телефону, який ви хочете набрати
+    };
+     
     return (
         <FooterBox>
             <ContactWrapper>
@@ -38,9 +50,13 @@ export const Footer = () => {
                                 <use href={`${sprite}#viber`}/>                                
                             </Svg>
                         </SocialLink>
-                        <SocialLink>
-                            <Svg>
-                                <use href={`${sprite}#phone`}/>                                
+                        <SocialLink
+                        // href="tel:+380123456789"
+                        onClick={handleClick}
+                        >
+                            <Svg
+                            >
+                            <use href={`${sprite}#phone`}/>                                
                             </Svg>
                         </SocialLink>
                     </SocialBox>

@@ -54,7 +54,7 @@ align-items: center;
 gap: 50px;
 `;
 
-export const SocialLink = styled.a`
+export const SocialLink = styled(Link)`
 border: 1px solid white;
 border-radius: 50%;
 padding: 10px;
@@ -73,4 +73,5 @@ export const Svg = styled.svg`
 width:25px;
 height:25px;
 fill:inherit;
+pointer-events: none;
 `;
