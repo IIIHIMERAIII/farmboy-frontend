@@ -11,15 +11,18 @@ import sprite from '../../images/sprite.svg'
 import Notiflix from "notiflix";
 
 export const Footer = () => {
-    // function onCopyLink(event) {
-    //   const item = event.target.getAttribute('item');
-    //     navigator.clipboard.writeText(item)
-    //     Notiflix.Notify.success("Скопійовано");
-    // }
-
+    
     const handleClick = (event) => {
         event.preventDefault();
-        window.location.href = "tel:1234567890"; // замініть номером телефону, який ви хочете набрати
+        window.location.href = "tel:+380123456789";
+        navigator.clipboard.writeText("+38012345678").then(
+          () => {
+            Notiflix.Notify.success("Телефон скопійовано")
+          },
+          () => {
+            Notiflix.Notify.failure("Ой, щось пішло не так")
+          }
+);
     };
      
     return (
@@ -51,7 +54,6 @@ export const Footer = () => {
                             </Svg>
                         </SocialLink>
                         <SocialLink
-                        // href="tel:+380123456789"
                         onClick={handleClick}
                         >
                             <Svg
