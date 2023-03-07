@@ -12,9 +12,10 @@ export const NavBar = () => {
     return (
     <NavBox>
         <Logo />
-            <Title>Чому варто обрати саме нас</Title>
             {location.pathname === '/'
-                ?
+                ?   
+                    <>
+                    <Title>Чому варто обрати саме нас</Title>
                     <CartBtn
                     className="header-button"
                     to='/cart'        
@@ -23,6 +24,7 @@ export const NavBar = () => {
                     <use href={`${sprite}#basket`}/>
                     </Svg>
                     </CartBtn>
+                    </> 
                 
                 :   <CartBtn
                     className="header-button"

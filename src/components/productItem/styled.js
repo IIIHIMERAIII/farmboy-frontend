@@ -26,12 +26,12 @@ export const TitleBox = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-width:290px;
+width: 290px;
 @media screen and (min-width: 768px) {
-width:340px;
+width: 324px;
 }
 @media screen and (min-width: 1198px) {
-width: 390px;
+width: 400px;
 }
 `;
 
@@ -87,10 +87,10 @@ align-items: center;
 width:290px;
 justify-content: space-between;
 @media screen and (min-width: 768px) {
-width:340px;
+width:324px;
 }
 @media screen and (min-width: 1198px) {
-width: 390px;
+width: 400px;
 }
 `;
 
@@ -98,7 +98,6 @@ export const ProductPrice = styled.span`
 color: green;
 text-align: center;
 font-size: 35px;
-margin-right:20px;
 @media screen and (min-width: 768px){
 margin-right: 20px;
 }
@@ -120,6 +119,7 @@ transition: all 0.3s ease-in-out;
 padding: 5px;
 font-family: inherit;
 font-weight: 700;
+font-size: 15px;
 :hover, :focus {
     background-color: green;
     transform: scale(1.1);
