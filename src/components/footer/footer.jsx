@@ -14,7 +14,8 @@ export const Footer = () => {
     
     const handleClick = (event) => {
         event.preventDefault();
-        window.location.href = "tel:+380123456789" ||  navigator.clipboard.writeText("+38012345678").then(
+        window.location.href = "tel:+380123456789"
+        navigator.clipboard.writeText("+38012345678").then(
           () => {
             Notiflix.Notify.success("Телефон скопійовано")
           },

@@ -26,6 +26,16 @@ color:white;
 font-family: 'Lobster', cursive;
 `;
 
+export const ContactBox = styled.div`
+display: flex;
+flex-direction: column;
+@media screen and (min-width: 768px) {
+justify-content: space-between;
+align-items: center;
+flex-direction:row;
+}
+`;
+
 export const PageSubtitle = styled.p`
 color:white;
 font-size: 18px;
@@ -49,4 +59,17 @@ color:#010c62;
 font-family: 'Marck Script', cursive;
 font-size: 18px;
 letter-spacing: 1.2px;
+`;
+
+export const GoogleIframe = styled.iframe`
+height: 350px;
+@media screen and (min-width: 768px) {
+border: none;
+allowFullScreen="";
+title="adress";
+box-shadow: 10px 0px 69px 39px rgba(0,0,0,0.75);
+}
+@media screen and (min-width: 1198px){
+width: 50%;
+}
 `;
